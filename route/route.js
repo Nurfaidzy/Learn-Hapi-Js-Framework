@@ -35,4 +35,11 @@ module.exports = [
             }
         }
     },
+    {
+        method: 'GET',
+        path: '/html',
+        handler: {
+            file: "index.html"
+        }
+    },
 ]
