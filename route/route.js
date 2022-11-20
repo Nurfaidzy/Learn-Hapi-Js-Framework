@@ -23,5 +23,16 @@ module.exports = [
         handler: (request, h) => {
             return request.payload;
         }
+    },
+    {
+        method: 'GET',
+        path: '/{param*}',
+        handler: {
+            directory: {
+                path: '.',
+                redirectToSlash: true,
+                index: true,
+            }
+        }
     }
 ]
