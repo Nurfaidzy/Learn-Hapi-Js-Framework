@@ -14,8 +14,17 @@ module.exports = {
                 plugin: require('inert')
             },
             {
+                plugin: 'vision',
+                options: {
+                    engines: {
+                        html: require("handlebars")
+                    },
+                    path: __dirname,
+                }
+            },
+            {
                 plugin: require('./employee'),
-            }
+            },
         ]
     }
 };

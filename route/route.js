@@ -42,4 +42,13 @@ module.exports = [
             file: "index.html"
         }
     },
+    {
+        method: 'GET',
+        path: '/gethanlers',
+        handler: (request, h) => {
+            return h.view("./mostfile/list.html"), {
+                test: "ini test"
+            }
+        }
+    },
 ]
